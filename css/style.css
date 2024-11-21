@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:wght@500;600;700&display=swap');
+/*Así importo la fuente*/
+
+*{
+    margin: 0 auto;
+    text-decoration: none;
+}
+body{
+    font-family: 'League Spartan';
+
+}
+header{
+    display: flex;
+}
+
+.logo{
+    padding: 5px;
+    margin: 20px;
+}
+.nav{
+    padding: 5px;
+    margin: 20px;
+
+}
+.nav a{
+    text-decoration: none; /*sacar el subrayado */
+    color: white;
+    margin: 10px;
+}
+.cabecera{
+    background-image:url(/images/desktop-image-hero-1.jpg);
+    min-height: 500px;
+    width: 800px;
+    margin: 0;
+    
+    display: flex; /*para que el nav quede en línea*/
+        
+}
+
+.hero{
+    max-width: 400px;
+   justify-content: center;
+   display: block;
+   align-items: center;
+   margin: 50px;
+}
+
+#shop{
+    color: black; 
+    letter-spacing: 1em; /*Espacio entre las letras*/
+    font-weight: 700;
+}
+.botonera{
+    background-color: black;
+    padding: 10px;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    display: flex;
+}
+.hero1{
+    display: flex;
+
+}
+
+#text{
+    min-width: 200px;
+    max-width: 600px;
+    margin: 40px;
+
+}
+#text h3{
+    letter-spacing: 0.5em;
+}
