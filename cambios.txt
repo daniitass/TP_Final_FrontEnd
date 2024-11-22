@@ -1,0 +1,18 @@
+
+HTML:
+    <div class="botonera"> movido por fuera del <section class="hero">  
+    Mayusculas en "SHOP NOW" "About our furniture"
+CSS:
+    :root{ }  agregado al principio
+
+    .botonera: -sumó un "margin-top: 28em;"
+                -height y width modificados
+                -Sumó margin-top: 28em; margin-right: -60px; (para acomodarlo)
+
+    .hero:  -Se agregó  display: flex;
+                        flex-direction: column;
+
+                        position: relative;     <-(para acomodarlo)
+                            right: 60px;    <-(para acomodarlo)
+            -Al <h2> se agregó un font-size: 40px;
+            -Al <a> se agregó un margin:0

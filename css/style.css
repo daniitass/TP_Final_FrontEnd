@@ -1,3 +1,10 @@
+:root {
+    --dark-gray: hsl(0, 0%, 63%);
+    --black: hsl(0, 0%, 0%);
+    --white: hsl(0, 0%, 100%);
+    --very-dark-gray: hsl(0, 0%, 27%);
+}
+
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:wght@500;600;700&display=swap');
 /*Así importo la fuente*/
 
@@ -28,40 +35,62 @@ header{
     margin: 10px;
 }
 .cabecera{
-    background-image:url(/images/desktop-image-hero-1.jpg);
+    background-image: url('../images/desktop-image-hero-1.jpg');
     min-height: 500px;
-    width: 800px;
-    margin: 0;
-    
+    width: 1400px;
+    margin: 0; 
     display: flex; /*para que el nav quede en línea*/
-        
+}
+
+.botonera{
+    background-color: black;
+    padding: 20px;
+    height: 40px;
+    width: 250px;
+    text-align: center;
+    display: flex;
+    margin-top: 28em;
+    margin-right: -60px;
+    
 }
 
 .hero{
-    max-width: 400px;
+   max-width: 400px;
+   display: flex;
+   flex-direction: column;
    justify-content: center;
-   display: block;
-   align-items: center;
+   align-items:center;
    margin: 50px;
+   position: relative;
+   right: 60px;
+   font-family: 'League Spartan', Arial;
 }
+.hero h2{
+    font-size: 40px;
+}
+.hero a{
+    margin-left: 0;
+}
+.hero p{
+    color: var(--dark-gray);
+}
+
+
 
 #shop{
     color: black; 
     letter-spacing: 1em; /*Espacio entre las letras*/
     font-weight: 700;
 }
-.botonera{
-    background-color: black;
-    padding: 10px;
-    height: 50px;
-    width: 150px;
-    text-align: center;
-    display: flex;
-}
+
 .hero1{
     display: flex;
-
+    font-family: 'League Spartan', Arial;
 }
+.hero1 p{
+    color: var(--dark-gray);
+}
+
 
 #text{
     min-width: 200px;
@@ -70,5 +99,5 @@ header{
 
 }
 #text h3{
-    letter-spacing: 0.5em;
+    letter-spacing: 0.2em;
 }
