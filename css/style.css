@@ -21,12 +21,13 @@ header{
 }
 
 .logo{
-    padding: 5px;
-    margin: 20px;
+    padding: 6px;
+    margin: 40px;
+    margin-left: 60px; /* poner a la misma altura que la silla*/
 }
 .nav{
     padding: 5px;
-    margin: 20px;
+    margin: 40px;
 
 }
 .nav a{
@@ -100,4 +101,11 @@ header{
 }
 #text h3{
     letter-spacing: 0.2em;
+}
+
+@media (min-width: 768px) {
+    .burger{
+        display: none;
+    }
+ 
 }
