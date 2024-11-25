@@ -32,7 +32,7 @@ header{
 }
 .nav a{
     text-decoration: none; /*sacar el subrayado */
-    color: white;
+    color: var(--white);
     margin: 10px;
 }
 .cabecera{
@@ -44,7 +44,7 @@ header{
 }
 
 .botonera{
-    background-color: black;
+    background-color: --black;
     padding: 20px;
     height: 40px;
     width: 250px;
@@ -79,7 +79,7 @@ header{
 
 
 #shop{
-    color: black; 
+    color: var(--black); 
     letter-spacing: 1em; /*Espacio entre las letras*/
     font-weight: 700;
 }
