@@ -6,6 +6,7 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:wght@500;600;700&display=swap');
+/*Así importo la fuente*/
 
 *{
     margin: 0 auto;
@@ -13,6 +14,7 @@
 }
 body{
     font-family: 'League Spartan';
+
 }
 header{
     display: flex;
@@ -21,23 +23,24 @@ header{
 .logo{
     padding: 6px;
     margin: 40px;
-    margin-left: 60px;
+    margin-left: 60px; /* poner a la misma altura que la silla*/
 }
 .nav{
     padding: 5px;
     margin: 40px;
+
 }
 .nav a{
-    text-decoration: none;
+    text-decoration: none; /*sacar el subrayado */
     color: white;
     margin: 10px;
 }
 .cabecera{
     background-image: url('../images/desktop-image-hero-1.jpg');
     min-height: 500px;
-    width: 100%;
-    margin: 0;
-    display: flex;
+    width: 1400px;
+    margin: 0; 
+    display: flex; /*para que el nav quede en línea*/
     background-size: cover;
 }
 
@@ -49,19 +52,20 @@ header{
     text-align: center;
     display: flex;
     margin-top: 28em;
-    margin-right: 100px;
+    margin-right: -60px;
+    
 }
 
 .hero{
-    max-width: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 50px;
-    position: relative;
-    right: 60px;
-    font-family: 'League Spartan', Arial;
+   max-width: 400px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items:center;
+   margin: 50px;
+   position: relative;
+   right: 60px;
+   font-family: 'League Spartan', Arial;
 }
 .hero h2{
     font-size: 40px;
@@ -73,9 +77,11 @@ header{
     color: var(--dark-gray);
 }
 
+
+
 #shop{
-    color: black;
-    letter-spacing: 1em;
+    color: black; 
+    letter-spacing: 1em; /*Espacio entre las letras*/
     font-weight: 700;
 }
 
@@ -87,36 +93,20 @@ header{
     color: var(--dark-gray);
 }
 
+
 #text{
     min-width: 200px;
     max-width: 600px;
     margin: 40px;
+
 }
 #text h3{
     letter-spacing: 0.2em;
-}
-
-@media (max-width: 379px) {
-    .link{
-        display: none;
-    }
-    .hero1{
-        display: flex;
-        flex-direction: column;
-        position: relative;
-    }
-    .hero{
-        max-width: 200px;
-        margin: 10px;
-    }
 }
 
 @media (min-width: 768px) {
     .burger{
         display: none;
     }
-    .hero{
-        max-width: 300px;
-        margin: 20px;
-    }
+ 
 }
