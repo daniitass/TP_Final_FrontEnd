@@ -18,3 +18,11 @@ CSS:
             -Al <a> se agregó un margin:0
 
 Dtassara: agrague los :root a las reglas.
+
+Dtassara: agregue  background-repeat: no-repeat;
+
+   .hero1{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+   }

@@ -6,7 +6,7 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:wght@500;600;700&display=swap');
-/*Así importo la fuente*/
+/*Así importamos la fuente*/
 
 *{
     margin: 0 auto;
@@ -28,7 +28,7 @@ header{
 .nav{
     padding: 5px;
     margin: 40px;
-
+    font-family: 'League Spartan', Arial;
 }
 .nav a{
     text-decoration: none; /*sacar el subrayado */
@@ -37,6 +37,7 @@ header{
 }
 .cabecera{
     background-image: url('../images/desktop-image-hero-1.jpg');
+    background-repeat: no-repeat;
     min-height: 500px;
     width: 1400px;
     margin: 0; 
@@ -77,15 +78,11 @@ header{
 }
 
 
-
 #shop{
     color: var(--black); 
     letter-spacing: 1em; /*Espacio entre las letras*/
     font-weight: 700;
 }
-
-
-
 
 .hero1 {
     display: grid;
@@ -120,13 +117,15 @@ header{
     font-size: 16px;
 }
 
-
-
-
-
-@media (max-width:375px) {
+@media (max-width:379px) {
    .link{
     display: none;
+   }
+  
+   .hero1{
+    display: flex;
+    flex-direction: column;
+    position: relative;
    }
 }
 @media (min-width: 768px) {
@@ -135,3 +134,4 @@ header{
     }
  
 }
+
