@@ -104,6 +104,17 @@ header{
     letter-spacing: 0.2em;
 }
 
+@media (max-width:379px) {
+    .link{
+     display: none;
+    }
+   
+    .hero1{
+     display: flex;
+     flex-direction: column;
+     position: relative;
+    }
+ }
 @media (min-width: 768px) {
     .burger{
         display: none;
