@@ -84,24 +84,46 @@ header{
     font-weight: 700;
 }
 
-.hero1{
-    display: flex;
+
+
+
+.hero1 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* La columna del texto ocupa el doble que las imágenes */
+    gap: 20px; /* Espaciado entre columnas */
+    align-items: center; /* Centra los elementos verticalmente */
     font-family: 'League Spartan', Arial;
 }
-.hero1 p{
-    color: var(--dark-gray);
+
+.hero1 img {
+    width: 100%; /* La imagen ocupa todo el ancho de su columna */
+    height: auto; /* Mantiene las proporciones originales */
+    object-fit: cover; /* Ajusta cómo se recorta la imagen si es necesario */
+    max-width: 100%; /* Evita que la imagen se desborde */
 }
 
-
-#text{
+#text {
+    text-align: left; /* Centra el texto horizontalmente */
     min-width: 200px;
     max-width: 600px;
     margin: 40px;
+}
 
-}
-#text h3{
+#text h3 {
     letter-spacing: 0.2em;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
+
+.hero1 p {
+    color: var(--dark-gray);
+    font-size: 16px;
+}
+
+
+
+
+
 @media (max-width:375px) {
    .link{
     display: none;
