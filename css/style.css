@@ -37,11 +37,11 @@ header{
 }
 .cabecera{
     background-image: url('../images/desktop-image-hero-1.jpg');
-    background-size: cover;
     min-height: 500px;
     width: 1400px;
     margin: 0; 
     display: flex; /*para que el nav quede en línea*/
+    background-size: cover;
 }
 
 .botonera{
@@ -103,6 +103,17 @@ header{
 #text h3{
     letter-spacing: 0.2em;
 }
+@media (max-width:379px) {
+    .link{
+     display: none;
+    }
+   
+    .hero1{
+     display: flex;
+     flex-direction: column;
+     position: relative;
+    }
+ }
 
 @media (min-width: 768px) {
     .burger{
