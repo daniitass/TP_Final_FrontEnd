@@ -37,7 +37,7 @@ header{
 }
 .cabecera{
     background-image: url('../images/desktop-image-hero-1.jpg');
-    background-repeat: no-repeat;
+    
     min-height: 500px;
     width: 1400px;
     margin: 0; 
@@ -51,8 +51,10 @@ header{
     width: 250px;
     text-align: center;
     display: flex;
-    margin-top: 28em;
-    margin-right: -60px;
+    margin-top: 28em ;
+    margin-right: -30px;
+    justify-content: center; /* Centra el contenido del botón horizontalmente */
+    align-items: center; /* Centra el contenido del botón verticalmente */; /* Fija la botonera al final de la cabecera */
     
 }
 
