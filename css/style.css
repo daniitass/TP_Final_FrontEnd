@@ -6,7 +6,7 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:wght@500;600;700&display=swap');
-/*Así importamos la fuente*/
+/*Así importo la fuente*/
 
 *{
     margin: 0 auto;
@@ -28,16 +28,16 @@ header{
 .nav{
     padding: 5px;
     margin: 40px;
-    font-family: 'League Spartan', Arial;
+
 }
 .nav a{
     text-decoration: none; /*sacar el subrayado */
-    color: var(--white);
+    color: white;
     margin: 10px;
 }
 .cabecera{
     background-image: url('../images/desktop-image-hero-1.jpg');
-    
+    background-size: cover;
     min-height: 500px;
     width: 1400px;
     margin: 0; 
@@ -45,16 +45,14 @@ header{
 }
 
 .botonera{
-    background-color: var(--black);
+    background-color: black;
     padding: 20px;
     height: 40px;
     width: 250px;
     text-align: center;
     display: flex;
-    margin-top: 28em ;
-    margin-right: -30px;
-    justify-content: center; /* Centra el contenido del botón horizontalmente */
-    align-items: center; /* Centra el contenido del botón verticalmente */; /* Fija la botonera al final de la cabecera */
+    margin-top: 28em;
+    margin-right: -60px;
     
 }
 
@@ -80,60 +78,35 @@ header{
 }
 
 
+
 #shop{
-    color: var(--black); 
+    color: black; 
     letter-spacing: 1em; /*Espacio entre las letras*/
     font-weight: 700;
 }
 
-.hero1 {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr; /* La columna del texto ocupa el doble que las imágenes */
-    gap: 20px; /* Espaciado entre columnas */
-    align-items: center; /* Centra los elementos verticalmente */
+.hero1{
+    display: flex;
     font-family: 'League Spartan', Arial;
 }
-
-.hero1 img {
-    width: 100%; /* La imagen ocupa todo el ancho de su columna */
-    height: auto; /* Mantiene las proporciones originales */
-    object-fit: cover; /* Ajusta cómo se recorta la imagen si es necesario */
-    max-width: 100%; /* Evita que la imagen se desborde */
+.hero1 p{
+    color: var(--dark-gray);
 }
 
-#text {
-    text-align: left; /* Centra el texto horizontalmente */
+
+#text{
     min-width: 200px;
     max-width: 600px;
     margin: 40px;
-}
 
-#text h3 {
+}
+#text h3{
     letter-spacing: 0.2em;
-    font-size: 24px;
-    margin-bottom: 20px;
 }
 
-.hero1 p {
-    color: var(--dark-gray);
-    font-size: 16px;
-}
-
-@media (max-width:379px) {
-   .link{
-    display: none;
-   }
-  
-   .hero1{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-   }
-}
 @media (min-width: 768px) {
     .burger{
         display: none;
     }
  
 }
-
