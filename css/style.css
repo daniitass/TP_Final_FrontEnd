@@ -6,45 +6,47 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:wght@500;600;700&display=swap');
-/*Así importo la fuente*/
 
-*{
+* {
     margin: 0 auto;
     text-decoration: none;
 }
-body{
-    font-family: 'League Spartan';
 
+body {
+    font-family: 'League Spartan';
 }
-header{
+
+header {
     display: flex;
 }
 
-.logo{
+.logo {
     padding: 6px;
     margin: 40px;
-    margin-left: 60px; /* poner a la misma altura que la silla*/
+    margin-left: 60px;
 }
-.nav{
+
+.nav {
     padding: 5px;
     margin: 40px;
-
 }
-.nav a{
-    text-decoration: none; /*sacar el subrayado */
+
+.nav a {
+    text-decoration: none;
     color: white;
     margin: 10px;
 }
-.cabecera{
+
+.cabecera {
     background-image: url('../images/desktop-image-hero-1.jpg');
     min-height: 500px;
-    width: 1400px;
-    margin: 0; 
-    display: flex; /*para que el nav quede en línea*/
+    width: 100%;
+    margin: 0;
+    display: flex;
     background-size: cover;
 }
 
-.botonera{
+.botonera {
     background-color: black;
     padding: 20px;
     height: 40px;
@@ -53,56 +55,69 @@ header{
     display: flex;
     margin-top: 28em;
     margin-right: -60px;
-    
 }
 
-.hero{
-   max-width: 400px;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items:center;
-   margin: 50px;
-   position: relative;
-   right: 60px;
-   font-family: 'League Spartan', Arial;
+.hero {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    position: relative;
+    right: 60px;
+    font-family: 'League Spartan', Arial;
 }
-.hero h2{
+
+.hero h2 {
     font-size: 40px;
 }
-.hero a{
+
+.hero a {
     margin-left: 0;
 }
-.hero p{
+
+.hero p {
     color: var(--dark-gray);
 }
 
-
-
-#shop{
-    color: black; 
-    letter-spacing: 1em; /*Espacio entre las letras*/
+#shop {
+    color: black;
+    letter-spacing: 1em;
     font-weight: 700;
 }
 
-.hero1{
+.hero1 {
     display: flex;
     font-family: 'League Spartan', Arial;
 }
-.hero1 p{
+
+.hero1 p {
     color: var(--dark-gray);
 }
 
-
-#text{
+#text {
     min-width: 200px;
     max-width: 600px;
     margin: 40px;
-
 }
-#text h3{
+
+#text h3 {
     letter-spacing: 0.2em;
 }
+
+@media (max-width: 375px) {
+    .cabecera {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .cabecera {
+        width: 1400px;
+    }
+}
+
 
 @media (max-width:379px) {
     .link{
