@@ -26,3 +26,6 @@ Dtassara: agregue  background-repeat: no-repeat;
     flex-direction: column;
     position: relative;
    }
+
+Leguizamon:
+    Cambios en @media (max-width: 375px) 
